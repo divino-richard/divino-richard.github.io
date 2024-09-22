@@ -13,7 +13,7 @@ export default function TopBar() {
   const [showPopupMenu, setShowPopupMenu] = useState(false);
 
   return (
-    <div className="w-full max-w-[1200px] m-auto flex items-center justify-between py-4 px-4 mb-2 sticky top-0 bg-white dark:bg-zinc-900 rounded-lg shadow-sm">
+    <div className="w-full max-w-[1200px] m-auto flex items-center z-10 justify-between py-4 px-4 mb-2 sticky top-0 bg-white dark:bg-zinc-900 rounded-lg shadow-sm">
       <div className="text-sm sm:flex hidden items-center gap-4">
         {NAVIGATION_ITEMS.map((navItem, index) => (
           <AnimatedDiv

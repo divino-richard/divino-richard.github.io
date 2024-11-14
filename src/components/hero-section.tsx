@@ -39,18 +39,20 @@ export default function HeroSection() {
         transition={{ease: 'anticipate', delay: 0.7}}
         className='w-full max-w-[600px]'
       >
-        <Link
-          to={'contact'} 
-          spy={true} 
-          smooth={true} 
-          offset={-65} 
-          duration={500} 
-        >
-          <ActionButton>
-            <AiFillPhone/>
-            <span>Get in Touch</span>
-          </ActionButton>
-        </Link>
+        <div className='w-fit'>
+          <Link
+            to={'contact'} 
+            spy={true} 
+            smooth={true} 
+            offset={-65} 
+            duration={500} 
+          >
+            <ActionButton>
+              <AiFillPhone/>
+              <span>Get in Touch</span>
+            </ActionButton>
+          </Link>
+        </div>
       </AnimatedDiv>
     </Element>
   )

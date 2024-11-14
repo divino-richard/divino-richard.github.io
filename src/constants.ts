@@ -8,8 +8,8 @@ import { FaNodeJs, FaVuejs } from 'react-icons/fa';
 
 export const NAVIGATION_ITEMS: NavigationItem[] = [
   {
-    label: 'About me',
-    value: 'about-me'
+    label: 'Home',
+    value: 'home'
   },
   {
     label: 'Services',
@@ -18,6 +18,14 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
   {
     label: 'Skills',
     value: 'skills'
+  },
+  {
+    label: 'Projects',
+    value: 'projects'
+  },
+  {
+    label: 'About me',
+    value: 'about-me'
   },
   {
     label: 'Contact',
@@ -147,3 +155,16 @@ export const ABOUT_ME = {
     "Whether I’m debugging complex code or designing intuitive user experiences, I bring the same energy: curiosity, precision, and a desire to keep improving. Let’s create something amazing together!"
   ]
 }
+
+export const PROJECTS = [
+  {
+    name: 'Horizon Express Travel Voucher System',
+    description: 'The Horizon Express Travel Voucher System is a digital platform designed to streamline and enhance the management, distribution, and redemption of travel vouchers for the Horizon Express network',
+    tools: ['ReactJS', 'NodeJS', 'Express JS', 'PostgreSQL with Prisma ORM', 'AWS S3']
+  },
+  {
+    name: 'MWell Dashboard',
+    description: 'The MWell Dashboard is a health and wellness monitoring platform designed to provide real-time insights into user activity, wellness scores, and health metrics. This dashboard supports users in tracking progress, setting goals, and accessing personalized wellness information.',
+    tools: ['NextJS', 'NodeJS', 'Express JS', 'PostgreSQL with Prisma ORM', 'Shadcn UI']
+  }
+]

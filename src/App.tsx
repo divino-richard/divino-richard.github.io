@@ -8,6 +8,7 @@ import Skills from "./components/skills";
 import TopBar from "./components/top-bar";
 import { Events, scrollSpy, animateScroll as scroll } from 'react-scroll';
 import { BiArrowToTop } from "react-icons/bi";
+import Projects from "./components/projects";
 
 function App() {
   useEffect(() => {
@@ -33,6 +34,7 @@ function App() {
         <HeroSection />
         <Services />
         <Skills />
+        <Projects />
         <AboutMe />
         <Contact />
         <Footer />

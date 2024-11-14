@@ -1,12 +1,15 @@
 import { AiFillPhone } from 'react-icons/ai';
 import ProfilePicture from '../assets/profile-picture.png';
 import ActionButton from './action-button';
-import { Link } from 'react-scroll';
+import { Element, Link } from 'react-scroll';
 import AnimatedDiv from './animated-div';
 
 export default function HeroSection() {
   return (
-    <div className='w-full sm:h-[60vh] h-[50vh] min-h-[400px] bg-zinc-50 dark:bg-zinc-800 rounded-lg flex flex-col justify-center items-center space-y-6 p-4'>
+    <Element 
+      className='w-full sm:h-[60vh] h-[50vh] min-h-[400px] bg-zinc-50 dark:bg-zinc-800 rounded-lg flex flex-col justify-center items-center space-y-6 p-4'
+      name="home"
+    >
       <AnimatedDiv
         transition={{ease: 'linear', delay: 0.2}}
         className='w-full max-w-[600px] flex items-center gap-2'
@@ -49,6 +52,6 @@ export default function HeroSection() {
           </ActionButton>
         </Link>
       </AnimatedDiv>
-    </div>
+    </Element>
   )
 }

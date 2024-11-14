@@ -27,7 +27,7 @@ export default function TopBar() {
               smooth={true} 
               offset={-65} 
               duration={500} 
-              className={`${activeNavItem?.value === navItem.value ? 'dark:text-white text-zinc-900' : 'text-zinc-400'} h-6 dark:hover:text-white hover:text-zinc-900 cursor-pointer`}
+              className={`${activeNavItem?.value === navItem.value ? 'dark:text-white text-zinc-900' : 'text-zinc-500'} h-6 dark:hover:text-white hover:text-zinc-900 cursor-pointer`}
               onClick={() => setActiveNavItem(navItem)}
             >
               {navItem.label}

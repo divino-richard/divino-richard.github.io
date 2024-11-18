@@ -5,6 +5,7 @@ import { DiMongodb, DiReact } from 'react-icons/di';
 import { SiAntdesign, SiExpress, SiMysql, SiPostgresql, SiPrisma, SiSocketdotio, SiTailwindcss } from 'react-icons/si';
 import { FaGitAlt } from "react-icons/fa";
 import { FaNodeJs, FaVuejs } from 'react-icons/fa';
+import { FaGolang } from 'react-icons/fa6';
 
 export const NAVIGATION_ITEMS: NavigationItem[] = [
   {
@@ -119,6 +120,10 @@ export const TECHNOLOGIES: ITechnology[] = [
   {
     icon: DiReact,
     name: 'React Native'
+  },
+  {
+    icon: FaGolang,
+    name: 'Golang'
   },
   {
     icon: SiPrisma,

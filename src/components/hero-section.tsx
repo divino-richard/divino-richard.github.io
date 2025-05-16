@@ -105,7 +105,7 @@ export default function HeroSection() {
                 />
               </div>
               <div className="absolute -bottom-2 -right-2 bg-zinc-100 dark:bg-zinc-700 px-3 py-1.5 rounded-full shadow-md">
-                <span className="font-medium text-sm text-zinc-600 dark:text-zinc-300">10+ Years Exp.</span>
+                <span className="font-medium text-sm text-zinc-600 dark:text-zinc-300">1+ Years Exp.</span>
               </div>
             </AnimatedDiv>
           </div>

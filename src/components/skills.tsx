@@ -1,30 +1,50 @@
 import { Element } from "react-scroll";
 import { TECHNOLOGIES } from "../constants";
+import { motion } from "framer-motion";
 
 export default function Skills() {
   return (
     <Element
-      className="space-y-8 px-4 flex flex-col justify-center"
+      className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       name="skills"
     >
-      <h1 className="sm:text-2xl text-xl font-semibold sm:text-center text-left text-zinc-900 dark:text-white">
-        The Technology Behind My Creations
-      </h1>
-      <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 sm:max-w-[800px] w-full m-auto">
+      <motion.div
+        className="mb-12 text-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 0.8 }}
+      >
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-zinc-900 dark:text-white mb-4">
+          Technical Expertise
+        </h2>
+        <p className="text-lg text-zinc-700 dark:text-zinc-300 max-w-3xl mx-auto">
+          The cutting-edge technologies that power my development solutions
+        </p>
+      </motion.div>
+
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
         {TECHNOLOGIES.map((item, index) => (
-          <div 
+          <motion.div
             key={index}
-            className="flex sm:flex-row flex-col gap-2 items-center border dark:border-zinc-800 p-4 rounded-md text-zinc-800 dark:text-white"
+            className="bg-white dark:bg-zinc-800/50 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-4 border border-zinc-100 dark:border-zinc-700/50 flex flex-col items-center sm:flex-row sm:items-center gap-3 group"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ 
+              duration: 0.5,
+              delay: index * 0.05,
+              ease: "easeOut"
+            }}
+            whileHover={{ scale: 1.02 }}
           >
-            <div className="flex items-center justify-center w-[35px] h-[35px] rounded-md bg-zinc-100 dark:bg-zinc-800">
-              <item.icon />
+            <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 group-hover:bg-indigo-100 dark:group-hover:bg-indigo-900/50 transition-colors duration-300">
+              <item.icon className="w-5 h-5" />
             </div>
-            <div className="flex-1">
-              <span className="text-sm">{item.name}</span>
+            <div className="flex-1 text-center sm:text-left">
+              <span className="font-medium text-zinc-900 dark:text-white">{item.name}</span>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </Element>
-  )
+  );
 }

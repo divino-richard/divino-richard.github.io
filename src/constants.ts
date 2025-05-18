@@ -175,11 +175,13 @@ export const PROJECTS = [
   }
 ]
 
+export const MY_EMAIL = 'richarddivino128@gmail.com';
+
 export const CONTACT_ITEMS  = [
     {
       icon: AiOutlineMail,
-      text: "richarddivino128@gmail.com",
-      href: "mailto:richarddivino128@gmail.com"
+      text: MY_EMAIL,
+      href: `mailto:${MY_EMAIL}`
     },
     {
       icon: AiOutlinePhone,

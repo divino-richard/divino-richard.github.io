@@ -3,6 +3,7 @@ import ProfilePicture from '../assets/profile-picture.png';
 import { Element, Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { useMemo } from 'react';
+import { MY_EMAIL } from '../constants';
 
 export default function HeroSection() {
   const startDate = new Date("2023-11-08");
@@ -70,7 +71,7 @@ export default function HeroSection() {
             </Link>
             
             <motion.a 
-              href="mailto:richard.divino@example.com" 
+              href={`mailto:${MY_EMAIL}`} 
               className="inline-flex items-center gap-2.5 px-6 py-3 rounded-lg border border-zinc-200 dark:border-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600 text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300 font-medium focus:outline-none focus:ring-2 focus:ring-zinc-300 focus:ring-offset-2 dark:focus:ring-zinc-700"
               whileHover={{ scale: 1.02 }}
             >

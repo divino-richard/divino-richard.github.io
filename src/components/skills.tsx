@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Skills() {
   return (
-    <Element
-      className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-      name="skills"
-    >
+    <Element name="skills">
       <motion.div
         className="mb-12 text-center"
         initial={{ opacity: 0 }}
@@ -22,7 +19,7 @@ export default function Skills() {
         </p>
       </motion.div>
 
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 sm:gap-6">
         {TECHNOLOGIES.map((item, index) => (
           <motion.div
             key={index}

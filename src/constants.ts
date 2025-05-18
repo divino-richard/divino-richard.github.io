@@ -1,4 +1,4 @@
-import { AiOutlineApi, AiOutlineDatabase, AiOutlineDesktop } from 'react-icons/ai';
+import { AiOutlineApi, AiOutlineDatabase, AiOutlineDesktop, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 import { IService, ITechnology, NavigationItem } from "./interfaces";
 import { IoMdNotificationsOutline } from 'react-icons/io';
 import { DiMongodb, DiReact } from 'react-icons/di';
@@ -6,6 +6,7 @@ import { SiAntdesign, SiExpress, SiMysql, SiPostgresql, SiPrisma, SiSocketdotio,
 import { FaGitAlt } from "react-icons/fa";
 import { FaNodeJs, FaVuejs } from 'react-icons/fa';
 import { FaGolang } from 'react-icons/fa6';
+import { PiMapPinLight } from 'react-icons/pi';
 
 export const NAVIGATION_ITEMS: NavigationItem[] = [
   {
@@ -173,3 +174,21 @@ export const PROJECTS = [
     tools: ['NextJS', 'NodeJS', 'Express JS', 'PostgreSQL with Prisma ORM', 'Shadcn UI']
   }
 ]
+
+export const CONTACT_ITEMS  = [
+    {
+      icon: AiOutlineMail,
+      text: "richarddivino128@gmail.com",
+      href: "mailto:richarddivino128@gmail.com"
+    },
+    {
+      icon: AiOutlinePhone,
+      text: "+63506866597",
+      href: "tel:+63506866597"
+    },
+    {
+      icon: PiMapPinLight,
+      text: "Davao City, Philippines",
+      href: "https://maps.google.com/?q=Davao+City,+Philippines"
+    }
+  ];

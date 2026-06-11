@@ -7,12 +7,10 @@ import {
   AiOutlinePhone,
 } from "react-icons/ai";
 import { IService, ITechnology, NavigationItem } from "./interfaces";
-import { IoMdNotificationsOutline } from "react-icons/io";
 import { DiMongodb, DiReact } from "react-icons/di";
 import {
   SiAmazonec2,
   SiAmazons3,
-  SiAntdesign,
   SiDocker,
   SiExpress,
   SiGithubactions,
@@ -20,13 +18,10 @@ import {
   SiMysql,
   SiNginx,
   SiPostgresql,
-  SiPrisma,
-  SiSocketdotio,
-  SiTailwindcss,
   SiVercel,
 } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
-import { FaNodeJs, FaVuejs } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
 import { PiMapPinLight } from "react-icons/pi";
 

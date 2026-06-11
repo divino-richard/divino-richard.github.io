@@ -17,7 +17,7 @@ const SKILLS_HIGHLIGHT = [
 ];
 
 export default function HeroSection() {
-  const startDate = new Date("2023-11-08");
+  const startDate = new Date("2022-11-08");
 
   const yearsOfExperience = useMemo(() => {
     const now = new Date();

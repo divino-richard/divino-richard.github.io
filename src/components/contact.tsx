@@ -21,28 +21,28 @@ export default function Contact() {
         </p>
       </motion.div>
 
-      <div className="overflow-hidden">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
         {CONTACT_ITEMS.map((item, index) => (
           <motion.a
             key={index}
             href={item.href}
             target={item.icon === PiMapPinLight ? "_blank" : undefined}
             rel={item.icon === PiMapPinLight ? "noopener noreferrer" : undefined}
-            className="block mb-4 group"
+            className="group h-full"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ 
+            transition={{
               duration: 0.5,
               delay: index * 0.1,
               ease: "easeOut"
             }}
             whileHover={{ scale: 1.02 }}
           >
-            <div className="flex items-center gap-4 bg-white dark:bg-zinc-800/50 p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-zinc-100 dark:border-zinc-700/50">
+            <div className="flex flex-col items-center text-center gap-4 h-full bg-white dark:bg-zinc-800/50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-zinc-100 dark:border-zinc-700/50">
               <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 group-hover:bg-indigo-100 dark:group-hover:bg-indigo-900/50 transition-colors duration-300">
                 <item.icon className="w-6 h-6" />
               </div>
-              <div className="flex-1 text-zinc-900 dark:text-white text-lg">
+              <div className="flex-1 flex items-center text-zinc-900 dark:text-white break-words">
                 {item.text}
               </div>
             </div>

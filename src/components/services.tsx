@@ -17,7 +17,7 @@ export default function Services() {
           Comprehensive Digital Solutions
         </h2>
         <p className="text-lg text-zinc-700 dark:text-zinc-300 max-w-3xl mx-auto">
-          Delivering end-to-end expertise from front-end experiences to back-end architecture
+          Delivering end-to-end expertise from front-end experiences to back-end architecture and DevOps infrastructure
         </p>
       </AnimatedDiv>
       
